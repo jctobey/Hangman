@@ -1,10 +1,10 @@
 
 
     // Creates an array that lists out all of the options (Letters for Hangman).
-    var HangmanKeys = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+    var HangmanKeys = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"," "];
     // Here's our Hangman variables
     //Obviously I wrote my secret words before I had breakfast
-    var Bagels = ["Poppyseed", "Everything", "Garlic", "JalapenoCheddar", "SesameSeed", "CinnamonRaisin", "Plain", "Pumpernickel", "AsiagoCheese","RyeBread"]
+    var Bagels = ["Poppyseed", "Everything", "Garlic", "Jalapeno Cheddar", "Sesame Seed", "Cinnamon Raisin", "Plain", "Pumpernickel", "Asiago Cheese","Rye Bread"]
     var Random;
     var RandomArray;
     let guessesRemaining = 8;
@@ -19,7 +19,7 @@
       return hideLetters.join("");
     }
     function resetGame() {
-      guessesRemaining = 8;
+      guessesRemaining = 6;
       guessedLetters = [];
       hideLetters = [];
       correctGuesses = 0;
