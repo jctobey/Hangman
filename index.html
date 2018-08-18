@@ -4,19 +4,54 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lora|Sawarabi+Mincho" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <title>Hangman Game</title>
 </head>
 
 <body>
-  <h1>Hangman Game</h1>
+    <div class="jumbotron">
+  <h1>Bagel Boss</h1>
   <h2>Press any key to play!</h2>
+</div>
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-6 offset-4">
   <div class="word"></div>
+</div>
+</div>
+<div class="row">
+<div class="col-6">
   <div class="guesses"></div>
+</div>
+<div class="col-6">
   <div class="letters"></div>
+</div>
+</div>
+<div class="row">
+    <div class="col-6">
   <div class="correctguess"></div>
-  <div class="wins"></div>
-  <div class="game"></div>
+</div>
 
+<div class="col-6">
+  <div class="wins"></div>
+</div>
+</div>
+<div class="row">
+<div class="col-12"> 
+  <div class="game"></div>
+</div>
+</div>
+
+  <div class="row">
+    <div class="col-12"> 
+  <div class="startover"><button class="button" onclick="resetGame()">Generate New Word</button>
+  </div>
+  </div>
+  </div>
+
+  
+  
 <script src="assets/javascript/game.js"></script>
 
 </body>

@@ -4,7 +4,7 @@
     var HangmanKeys = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
     // Here's our Hangman variables
     //Obviously I wrote my secret words before I had breakfast
-    var Bagels = ["Poppyseed", "Everything", "Garlic", "Jalapeno Cheddar", "Sesame Seed", "Cinnamon Raisin", "Plain"]
+    var Bagels = ["Poppyseed", "Everything", "Garlic", "JalapenoCheddar", "SesameSeed", "CinnamonRaisin", "Plain", "Pumpernickel", "AsiagoCheese","RyeBread"]
     var Random;
     var RandomArray;
     let guessesRemaining = 8;
@@ -63,7 +63,7 @@
           } if (correctGuesses === RandomArray.length) {
             document.querySelector(".game").innerHTML = "You Win!"
             Wins++;
-            resetGame();
+            
           }
 
         }
@@ -93,7 +93,6 @@
         // Set the inner HTML contents of the #game div to our html string
         if (guessesRemaining < 1) {
           document.querySelector(".game").innerHTML = "Game Over";
-          resetGame();
           // Just playing around with this code, which I grabbed off of a StackOverflow solution. Does it make sense to put a reset function here?
 
         }

@@ -1,0 +1,39 @@
+*{
+    font-family: 'Lora', serif;
+    
+}
+
+body{
+    background-image: url("../images/bagel.jpg");
+}
+.jumbotron{
+    text-align:center;
+    height:175px;
+    background-color:#EB9A32;
+
+}
+.container-fluid{
+    background-color:#DEB887;
+    height:300px;
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+.col-6{
+    font-size:14pt;
+}
+.word {
+    font-size:20pt;
+}
+.game{
+    text-align:center;
+    margin-bottom:20px;
+    font-size:22px;
+}
+.startover{
+    text-align:center;
+}
+.button{
+    background-color:#EB9A32;
+    padding:10px 10px;
+}
+
+
